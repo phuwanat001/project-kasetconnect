@@ -12,22 +12,14 @@
     />
   </head>
   <body>
-    <div class="navbar">
-      <div class="logo"><span>Kaset</span>Connect |</div>
-      <div class="lr">
-        <div class="menu">
-          <a href="card.html">หน้าหลัก</a>
-          <a href="#">ค้นหาอุปกรณ์</a>
-          <a href="#">หมวดหมู่</a>
-          <a href="#">ติดต่อเรา</a>
-        </div>
-        <div class="auth">
-          <a href="register.html">สมัครสมาชิก</a>
-          <span class="divider">|</span>
-          <a href="#">เข้าสู่ระบบ</a>
-        </div>
-      </div>
-    </div>
+    <div id="component-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("component-container").innerHTML = data;
+        });
+    </script>
     <!-- banner -->
     <div class="banner">
       <img src="" alt="" srcset="" />
