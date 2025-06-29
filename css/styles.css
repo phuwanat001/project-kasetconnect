@@ -326,14 +326,40 @@
      font-size: 2rem;
  }
 
- .footer {
+ .footer-in {
      display: flex;
      flex-direction: row;
      background-color: white;
      margin: 2rem auto;
-     padding: 10rem;
-     justify-content: center;
+     padding: 5%;
+     width: 50%;
+     border-radius: 10px;
+
+    
+     
  }
+ .fa-div ,.e-div{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+
+    i{
+        margin-right: 20px;
+        color: var(--btnblue);
+        font-size: 2rem;    
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    
+ }
+ .fa-div:hover ,.e-div:hover{
+    cursor: pointer;
+ }
+
 
  /* detail-item */
 
@@ -580,8 +606,58 @@
 
     
  }
- .input-login{
+ html {
+  scroll-behavior: smooth;
+}
+/* ปรับ dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
- }
+.dropbtn {
+  background-color: transparent;
+  color: var(--txtSilver);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-family: inherit;
+}
+.dropbtn:hover{
+    color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  z-index: 1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ /* .input-login{
+
+ } */
+
 
  
