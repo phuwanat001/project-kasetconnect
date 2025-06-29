@@ -1,0 +1,154 @@
+*{
+ margin: 0;
+
+}
+.item-container{
+    margin: 1rem 2rem;
+    padding: 1.5rem;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    background-color: rgb(108, 40, 255);
+
+}
+.card-item{
+    background-color: rgb(104, 157, 118);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: auto;
+    padding: 1.5rem;
+    border-radius: 2%;
+
+}
+.img img{
+        
+    
+ 
+}
+.add-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    
+}
+/* css/card.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card-item {
+  position: relative;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.add-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #4FC3F7;
+  color: white;
+  border-radius: 7%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.typename-item {
+  font-size: 12px;
+  color: #999;
+  padding: 8px 16px 0;
+}
+
+.name-item {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 16px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+.price-item p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.score-item {
+  text-align: right;
+}
+
+.star-score {
+  color: #fbc02d;
+  font-size: 14px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 8px;
+  padding: 0 16px 16px;
+}
+
+.book-btn, .seemore-btn {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.book-btn {
+  background-color: #7CB342;
+  color: white;
+}
+
+.seemore-btn {
+  background-color: #ffffff;
+  border: 1px solid #7CB342;
+  color: #7CB342;
+}

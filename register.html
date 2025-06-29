@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>สมัครสมาชิก</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="component-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("component-container").innerHTML = data;
+        });
+    </script>
+    <p class="hname">สมัครสมาชิก</p>
+    <div class="container-detail">
+      <div class="role-reg">
+        <div class="ro-reg">
+          <p>ผู้เช่า</p>
+          <p>ผู้ให้เช่า</p>
+        </div>
+      </div>
+      <div class="container-input">
+        <div class="in-l">
+          <div class="search-bar">
+            <p>ชื่อผู้ใช้งาน</p>
+            <input type="text" placeholder="ชื่อผู้ใช้งาน" id="bar-srh" />
+          </div>
+          <div class="search-bar">
+            <p>ชื่อ-นามสกุล</p>
+            <input type="text" placeholder="ชื่อ-นามสกุล" id="bar-srh" />
+          </div>
+          <div class="search-bar">
+            <p>เบอร์โทรศัพท์</p>
+            <input type="number" placeholder="เบอร์โทรศัพท์" id="bar-srh" />
+          </div>
+          <div class="search-bar">
+            <p>อีเมล</p>
+            <input type="email" placeholder="อีเมล" id="bar-srh" />
+          </div>
+        </div>
+
+        <div class="in-r">
+          <div class="search-bar">
+            <p>รหัสผ่าน</p>
+            <input type="text" placeholder="รหัสผ่าน" id="bar-srh" />
+          </div>
+          <div class="search-bar">
+            <p>หมายเลขบัตรประชาชน</p>
+            <input type="text" placeholder="หมายเลขบัตรประชาชน" id="bar-srh" />
+          </div>
+          <div class="search-bar">
+            <p>อาชีพ</p>
+            <input type="text" placeholder="อาชีพ" id="bar-srh" />
+          </div>
+          <div class="search-bar">
+            <p>ที่อยู่</p>
+            <input type="text" placeholder="ที่อยู่" id="bar-srh" />
+          </div>
+        </div>
+      </div>
+      <button class="btn-confirm">ยืนยัน</button>
+    </div>
+  </body>
+</html>

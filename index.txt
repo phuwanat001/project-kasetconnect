@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaset Connect</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><span>Kaset</span> Connect   |</div>
+
+    <div class="menu">
+      <a href="card.html">หน้าหลัก</a>
+      <a href="#">ค้นหาอุปกรณ์</a>
+      <a href="#">หมวดหมู่</a>
+      <a href="#">ติดต่อเรา</a>
+    </div>
+    <div class="auth">
+      <a href="#">สมัครสมาชิก</a>
+      <span class="divider">|</span>
+      <a href="#">เข้าสู่ระบบ</a>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner">
+    <div class="banner-text">
+      <p>Banner<br>1710×634</p>
+    </div>
+  </div>
+  <!-- Typeitem -->
+  <div class="hname">
+    <p>หมวดหมู่เครื่องจักรและอุปกรณ์</p> 
+  </div>
+  <div class="typeitem">
+        <div class="pd1">
+            <img src="img/d1.jpg">
+            <p>รถแทรกเตอร์</p>
+        </div>
+            <div class="pd1">
+            <img src="img/d2.jpg">
+            <p>โดรน</p>
+        </div>
+            <div class="pd1">
+            <img src="img/d3.jpg">
+            <p>เครื่องตัดหญ้า</p>
+        </div>
+            <div class="pd1">
+            <img src="img/d4.jpg">
+            <p>เครื่องพ่นยา</p>
+        </div>
+            <div class="pd1">
+            <img src="img/d5.png">
+            <p>กรรไกร</p>
+        </div>
+  </div>
+  <div class="content">
+    <div class="container-content">
+      <div class="hname1">
+        <p>เครื่องจักรและอุปกรณ์ที่นิยม</p> 
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="รถแทรกเตอร์">
+      <button class="search-button">ค้นหา</button>
+    </div>  
+   <script>
+    // ข้อมูลจำลอง
+    const tractors = [
+      {
+        img: "img/d1.jpg",
+        typename: "รถแทรกเตอร์",
+        name: "รถแทรกเตอร์ M6240SUH",
+        price: "1000 บาท/วัน",
+        status: "สถานะ: ว่าง / จำนวน 2 เครื่อง"
+      },
+      {
+        img: "img/d2.jpg",
+        typename: "รถแทรกเตอร์",
+        name: "รถแทรกเตอร์ L4708SP",
+        price: "1200 บาท/วัน",
+        status: "สถานะ: ว่าง / จำนวน 1 เครื่อง"
+      },
+      {
+        img: "img/d3.jpg",
+        typename: "รถแทรกเตอร์",
+        name: "รถแทรกเตอร์ M6040",
+        price: "1500 บาท/วัน",
+        status: "สถานะ: ว่าง / จำนวน 3 เครื่อง"
+      },
+      {
+        img: "img/d4.jpg",
+        typename: "รถแทรกเตอร์",
+        name: "รถแทรกเตอร์ B2440",
+        price: "800 บาท/วัน",
+        status: "สถานะ: ว่าง / จำนวน 1 เครื่อง"
+      },
+      {
+        img: "img/d5.png",
+        typename: "รถแทรกเตอร์",
+        name: "รถแทรกเตอร์ M9540",
+        price: "2000 บาท/วัน",
+        status: "สถานะ: ว่าง / จำนวน 2 เครื่อง"
+      }
+    ];
+
+    const container = document.getElementById("tractor-list");
+
+    // สร้างลูป HTML
+    tractors.slice(0, 5).forEach((tractor) => {
+      const html = `
+        <div class="card-item">
+          <div class="img">
+            <img src="${tractor.img}" alt="${tractor.name}" />
+          </div>
+          <div class="add-btn">+</div>
+          <div class="typename-item">${tractor.typename}</div>
+          <div class="name-item">${tractor.name}</div>
+          <div class="detail-item">
+            <div class="price-item">
+              <p>${tractor.price}</p>
+              <p>${tractor.status}</p>
+            </div>
+            <div class="score-item">
+              <p>ความพึงพอใจ</p>
+              <div class="star-score">★ ★ ★ ★ ☆</div>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="book-btn">จองตอนนี้</button>
+            <button class="seemore-btn">ดูรายละเอียด</button>
+          </div>
+        </div>
+      `;
+      container.insertAdjacentHTML('beforeend', html);
+    });
+  </script>
+
+
+
+
+
+</body>
+</html>

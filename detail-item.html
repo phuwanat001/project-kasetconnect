@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>รายละเอียดเครื่องจักรและอุปกรณ์</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="component-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("component-container").innerHTML = data;
+        });
+    </script>
+    <p class="hname">รายละเอียดเครื่องจักรและอุปกรณ์</p>
+    <div class="container-detail">
+      <div class="box-detail-item">
+        <div class="content-l">
+          <img src="img/d1.jpg" alt="" />
+          <div class="box-price">
+            <p>ราคา</p>
+            <p>1000 / วัน</p>
+          </div>
+        </div>
+        <div class="content-r">
+          <p id="head-dt">รถแทรกเตอร์ M6340SUH</p>
+          <p id="user-dt">ผู้ให้บริการ : user001</p>
+          <p id="des-dt">คำอธิบาย</p>
+          <p id="detail-dt">
+            เครื่องยนต์ดีเซล : เครื่องยนต์ดีเซลคูโบต้า แบบอินไดเร็กต์อินเจ็กชัน
+            3 สูบ 4 จังหวะ สูบตั้ง ระบายความร้อนด้วยน้ำ แรงม้า : (แรงม้า)40.00
+            ปริมาตรกระบอกสูบ : (ซีซี)1,826 ความจุน้ำมันเชื้อเพลิง : (ลิตร)40
+          </p>
+          <p id="pr-dt">คุณสมบัติ</p>
+          <p id="prp-dt">รุ่น : คูโบต้า L4018SP</p>
+          <p id="prp-dt">ประกันภัย : ขั้นพื้นฐาน</p>
+          <p id="prp-dt">เงื่อนไข : เติมน้ำมันเต็มถังเมื่อเช่าเสร็จ</p>
+          <div class="status-dt">
+            <p>สถานะว่าง จำนวน 2 คัน</p>
+          </div>
+          <div class="btn-dt">
+            <button class="add-cart">เพิ่มใส่ตะกร้า</button>
+            <button class="book-now">จองตอนนี้</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="hname">เครื่องจักรและอุปกรณ์ที่คล้ายกัน</p>
+    <div class="container-detail">
+      <div class="container-item">
+        <!-- Card -->
+        <div
+          class="card-item"
+          onclick="window.location.href='detail-item.html'"
+          style="cursor: pointer"
+        >
+          <img src="img/d1.jpg" alt="" />
+          <button id="add-btn">+</button>
+          <p id="type-card">รถแทรกเตอร์</p>
+          <p id="name-card">รถแทรกเตอร์ M6340SUH</p>
+          <div class="detail-card">
+            <div class="status-card">
+              <p>1000 บาท / วัน</p>
+              <p>สถานะว่าง / จำนวน 2 คัน</p>
+            </div>
+            <div class="score-star">
+              <p>ความพึงพอใจ</p>
+              <p>★ ★ ★ ★ ☆</p>
+            </div>
+          </div>
+          <div class="btn-card">
+            <button id="book-btn">จองตอนนี้</button>
+            <button id="detail-btn">ดูรายละเอียด</button>
+          </div>
+        </div>
+        <div
+          class="card-item"
+          onclick="window.location.href='detail-item.html'"
+          style="cursor: pointer"
+        >
+          <img src="img/d1.jpg" alt="" />
+          <button id="add-btn">+</button>
+          <p id="type-card">รถแทรกเตอร์</p>
+          <p id="name-card">รถแทรกเตอร์ M6340SUH</p>
+          <div class="detail-card">
+            <div class="status-card">
+              <p>1000 บาท / วัน</p>
+              <p>สถานะว่าง / จำนวน 2 คัน</p>
+            </div>
+            <div class="score-star">
+              <p>ความพึงพอใจ</p>
+              <p>★ ★ ★ ★ ☆</p>
+            </div>
+          </div>
+          <div class="btn-card">
+            <button id="book-btn">จองตอนนี้</button>
+            <button id="detail-btn">ดูรายละเอียด</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
