@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เข้าสู่ระบบ</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="component-container"></div>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("component-container").innerHTML = data;
+        });
+    </script>
+    <p class="hname">เข้าสู่ระบบ</p>
+    <div class="container-detail1">
+        
+        <div class="in-login">
+            <div class="input-login">
+            <p>ชื่อผู้ใช้งาน</p>
+            <input type="text" placeholder="ชื่อผู้ใช้งาน" id="bar-srh" />
+          </div>
+          <div class="input-login">
+            <p>รหัสผ่าน</p>
+            <input type="password" placeholder="รหัสผ่าน" id="bar-srh" />
+          </div>
+        </div>
+        <button class="btn-confirm">ยืนยัน</button>
+    </div>
+  </body>
+</html>
