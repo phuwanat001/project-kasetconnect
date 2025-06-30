@@ -659,5 +659,37 @@
 
  } */
 
+ .navbar-admin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .auth{
+        width: 5%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .auth:hover{
+        cursor: pointer;
+        color: var(--btnHgreen);
+    }
+ }
+ .hname-ad{
+    font-size: 100px;
+ }
+ .container-l-admin{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--btnblue);
+
+ }
+
+
+
+
 
  
