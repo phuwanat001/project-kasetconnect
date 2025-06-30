@@ -335,29 +335,34 @@
      width: 50%;
      border-radius: 10px;
 
-    
-     
- }
- .fa-div ,.e-div{
 
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    padding: 10px;
 
-    i{
-        margin-right: 20px;
-        color: var(--btnblue);
-        font-size: 2rem;    
-    }
-    p{
-        font-size: 1.2rem;
-    }
-    
  }
- .fa-div:hover ,.e-div:hover{
-    cursor: pointer;
+
+ .fa-div,
+ .e-div {
+
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     align-items: center;
+     padding: 10px;
+
+     i {
+         margin-right: 20px;
+         color: var(--btnblue);
+         font-size: 2rem;
+     }
+
+     p {
+         font-size: 1.2rem;
+     }
+
+ }
+
+ .fa-div:hover,
+ .e-div:hover {
+     cursor: pointer;
  }
 
 
@@ -521,7 +526,7 @@
 
  /* register */
  .role-reg {
-    width: 100%;
+     width: 100%;
      position: relative;
      display: flex;
      flex-direction: row;
@@ -538,7 +543,7 @@
          background-color: white;
          justify-content: space-around;
          border-radius: 10px;
- 
+
 
          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2)
      }
@@ -557,35 +562,40 @@
      }
 
  }
- .container-input{
-    /* background-color: var(--btnblue); */
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+
+ .container-input {
+     /* background-color: var(--btnblue); */
+     margin-top: 3rem;
+     margin-bottom: 3rem;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
  }
- .inputreg:focus{
-    border: 2px solid var(--btnHgreen);
+
+ .inputreg:focus {
+     border: 2px solid var(--btnHgreen);
  }
- .btn-confirm{
-    background-color: var(--btngreen);
-    border: none;
-    padding: 14px;
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 1.5rem;
-    width: 15%;
-    border-radius: 5px;
+
+ .btn-confirm {
+     background-color: var(--btngreen);
+     border: none;
+     padding: 14px;
+     font-size: 1rem;
+     color: white;
+     margin-bottom: 1.5rem;
+     width: 15%;
+     border-radius: 5px;
 
 
  }
- .btn-confirm:hover{
-    cursor: pointer;
-    background-color: var(--btnHgreen);
+
+ .btn-confirm:hover {
+     cursor: pointer;
+     background-color: var(--btnHgreen);
  }
-  .container-detail1 {
+
+ .container-detail1 {
 
      margin: 2rem auto;
      width: 80%;
@@ -600,96 +610,135 @@
      /* background-color: var(--btngreen); */
      align-items: center;
  }
- .in-login{
 
-    margin-bottom: 2rem;
+ .in-login {
 
-    
+     margin-bottom: 2rem;
+
+
  }
+
  html {
-  scroll-behavior: smooth;
-}
-/* ปรับ dropdown menu */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+     scroll-behavior: smooth;
+ }
 
-.dropbtn {
-  background-color: transparent;
-  color: var(--txtSilver);
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  padding: 8px 12px;
-  font-family: inherit;
-}
-.dropbtn:hover{
-    color: black;
-}
+ /* ปรับ dropdown menu */
+ .dropdown {
+     position: relative;
+     display: inline-block;
+ }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-  z-index: 1;
-  border-radius: 6px;
-  overflow: hidden;
-}
+ .dropbtn {
+     background-color: transparent;
+     color: var(--txtSilver);
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+     padding: 8px 12px;
+     font-family: inherit;
+ }
 
-.dropdown-content a {
-  color: black;
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 15px;
-}
+ .dropbtn:hover {
+     color: black;
+ }
 
-.dropdown-content a:hover {
-  background-color: #f0f0f0;
-}
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: white;
+     min-width: 160px;
+     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+     border-radius: 6px;
+     overflow: hidden;
+ }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+ .dropdown-content a {
+     color: black;
+     padding: 10px 16px;
+     text-decoration: none;
+     display: block;
+     font-size: 15px;
+ }
+
+ .dropdown-content a:hover {
+     background-color: #f0f0f0;
+ }
+
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
 
  /* .input-login{
 
  } */
 
- .navbar-admin{
+ .navbar-admin {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+
+     .auth {
+         width: 5%;
+
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         align-items: center;
+
+     }
+
+     .auth:hover {
+         cursor: pointer;
+         color: var(--btnHgreen);
+     }
+ }
+
+ .hname-ad {
+     font-size: 16px;
+ }
+
+ .container-l-admin {
+     display: flex;
+     flex-direction: column;
+     background-color: white;
+     padding: 20px;
+     width: 250px;
+     max-width: 250px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+ }
+
+ .box-fuc {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     padding: 10px;
+     color: black;
+     background-color: white;
+     align-items: center;
+     margin-bottom: 10px;
+     border-radius: 5px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    i{
+         margin-left: 10px;
+
+    }
+     p {
+         margin-left: 50px;
+     }
+ }
+
+ .box-fuc:hover {
+     background-color: var(--btngreen);
+     color: white;
+     cursor: pointer;
+ }
+ .content-admin{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    .auth{
-        width: 5%;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-
-    }
-    .auth:hover{
-        cursor: pointer;
-        color: var(--btnHgreen);
-    }
  }
- .hname-ad{
-    font-size: 100px;
- }
- .container-l-admin{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--btnblue);
-
- }
-
-
-
 
 
  

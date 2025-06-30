@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>แอดมิน</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <p class="hname-ad">สวัสดี Admin : username</p>
+    
+
+    <div class="content-admin">
+      <div id="aside-admin"></div>
+
+      <div id="dashbroad-admin"></div>
+    </div>
+
+    <script>
+      fetch("navbar-admin.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar-placeholder").innerHTML = html;
+        });
+      fetch("aside-admin.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("aside-admin").innerHTML = html;
+        });
+      fetch("dashbroad-admin.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("dashbroad-admin").innerHTML = html;
+        });
+    </script>
+  </body>
+</html>
