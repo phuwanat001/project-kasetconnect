@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasetconnect page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="component-container"></div>
+    <script>
+      fetch("navbar2.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("component-container").innerHTML = data;
+        });
+    </script>
+    <!-- banner -->
+    <div class="banner">
+      <img src="" alt="" srcset="" />
+      <p>1710*634</p>
+    </div>
+    <br />
+    <!-- ชนิด -->
+    <p id="hname">หมวดหมู่เครื่องจักรและอุปกรณ์</p>
+    <div class="type-item">
+      <div class="t-item">
+        <img src="img/d1.jpg" />
+        <p>รถแทรกเตอร์</p>
+      </div>
+      <div class="t-item">
+        <img src="img/d2.jpg" />
+        <p>โดรน</p>
+      </div>
+      <div class="t-item">
+        <img src="img/d3.jpg" />
+        <p>เครื่องตัดหญ้า</p>
+      </div>
+      <div class="t-item">
+        <img src="img/d4.jpg" />
+        <p>เครื่องพ่นยา</p>
+      </div>
+      <div class="t-item">
+        <img src="img/d5.png" />
+        <p>อื่นๆ</p>
+      </div>
+    </div>
+
+    <!-- เครื่องที่นิยม -->
+    <div class="container-content" id="con-item">
+      <p>เครื่องจักรและอุปกรณ์ที่นิยม</p>
+      <div class="search-bar" id="search-section">
+        <input type="text" placeholder="ค้นหาอุปกรณ์" id="bar-srh" />
+        <button id="btn-srh">ค้นหาอุปกรณ์</button>
+      </div>
+      <div class="container-item">
+        <!-- Card -->
+        <div
+          class="card-item"
+          onclick="window.location.href='detail-item.html'"
+          style="cursor: pointer"
+        >
+          <img src="img/d1.jpg" alt="" />
+          <button id="add-btn">+</button>
+          <p id="type-card">รถแทรกเตอร์</p>
+          <p id="name-card">รถแทรกเตอร์ M6340SUH</p>
+          <div class="detail-card">
+            <div class="status-card">
+              <p>1000 บาท / วัน</p>
+              <p>สถานะว่าง / จำนวน 2 คัน</p>
+            </div>
+            <div class="score-star">
+              <p>ความพึงพอใจ</p>
+              <p>★ ★ ★ ★ ☆</p>
+            </div>
+          </div>
+          <div class="btn-card">
+            <button id="book-btn">จองตอนนี้</button>
+            <button id="detail-btn">ดูรายละเอียด</button>
+          </div>
+        </div>
+        <!-- Card -->
+        <div
+          class="card-item"
+          onclick="window.location.href='detail-item.html'"
+          style="cursor: pointer"
+        >
+          <img src="img/d1.jpg" alt="" />
+          <button id="add-btn">+</button>
+          <p id="type-card">รถแทรกเตอร์</p>
+          <p id="name-card">รถแทรกเตอร์ M6340SUH</p>
+          <div class="detail-card">
+            <div class="status-card">
+              <p>1000 บาท / วัน</p>
+              <p>สถานะว่าง / จำนวน 2 คัน</p>
+            </div>
+            <div class="score-star">
+              <p>ความพึงพอใจ</p>
+              <p>★ ★ ★ ★ ☆</p>
+            </div>
+          </div>
+          <div class="btn-card">
+            <button id="book-btn">จองตอนนี้</button>
+            <button id="detail-btn">ดูรายละเอียด</button>
+          </div>
+        </div>
+        <!-- Card -->
+        <div
+          class="card-item"
+          onclick="window.location.href='detail-item.html'"
+          style="cursor: pointer"
+        >
+          <img src="img/d1.jpg" alt="" />
+          <button id="add-btn">+</button>
+          <p id="type-card">รถแทรกเตอร์</p>
+          <p id="name-card">รถแทรกเตอร์ M6340SUH</p>
+          <div class="detail-card">
+            <div class="status-card">
+              <p>1000 บาท / วัน</p>
+              <p>สถานะว่าง / จำนวน 2 คัน</p>
+            </div>
+            <div class="score-star">
+              <p>ความพึงพอใจ</p>
+              <p>★ ★ ★ ★ ☆</p>
+            </div>
+          </div>
+          <div class="btn-card">
+            <button id="book-btn">จองตอนนี้</button>
+            <button id="detail-btn">ดูรายละเอียด</button>
+          </div>
+        </div>
+        <!-- Card -->
+        <div
+          class="card-item"
+          onclick="window.location.href='detail-item.html'"
+          style="cursor: pointer"
+        >
+          <img src="img/d1.jpg" alt="" />
+          <button id="add-btn">+</button>
+          <p id="type-card">รถแทรกเตอร์</p>
+          <p id="name-card">รถแทรกเตอร์ M6340SUH</p>
+          <div class="detail-card">
+            <div class="status-card">
+              <p>1000 บาท / วัน</p>
+              <p>สถานะว่าง / จำนวน 2 คัน</p>
+            </div>
+            <div class="score-star">
+              <p>ความพึงพอใจ</p>
+              <p>★ ★ ★ ★ ☆</p>
+            </div>
+          </div>
+          <div class="btn-card">
+            <button id="book-btn">จองตอนนี้</button>
+            <button id="detail-btn">ดูรายละเอียด</button>
+          </div>
+        </div>
+        <!-- Card -->
+        <div
+          class="card-item"
+          onclick="window.location.href='detail-item.html'"
+          style="cursor: pointer"
+        >
+          <img src="img/d1.jpg" alt="" />
+          <button id="add-btn">+</button>
+          <p id="type-card">รถแทรกเตอร์</p>
+          <p id="name-card">รถแทรกเตอร์ M6340SUH</p>
+          <div class="detail-card">
+            <div class="status-card">
+              <p>1000 บาท / วัน</p>
+              <p>สถานะว่าง / จำนวน 2 คัน</p>
+            </div>
+            <div class="score-star">
+              <p>ความพึงพอใจ</p>
+              <p>★ ★ ★ ★ ☆</p>
+            </div>
+          </div>
+          <div class="btn-card">
+            <button id="book-btn">จองตอนนี้</button>
+            <button id="detail-btn">ดูรายละเอียด</button>
+          </div>
+        </div>
+      </div>
+      <button id="seemore-btn">เพิ่มเติม</button>
+    </div>
+    <div class="about-web">
+      <p id="ph">
+        ทำไมต้องเช่าเครื่องจักรและอุปกรณ์กับ <span>Kasetconnect</span>
+      </p>
+      <p>
+        การลงทุนซื้อเครื่องจักรสำหรับการใช้งานเพียงครั้งเดียวย่อมมีค่าใช้จ่ายที่สูงและอาจไม่คุ้มค่าในการใช้งานระยะยาว
+        แต่การเช่าเครื่องจักรกับระบบของเราช่วยให้คุณสามารถดำเนินงานภายใต้บรรยากาศที่ต้องการในงบประมาณที่ควบคุมได้
+        และยังสามารถหลีกเลี่ยงค่าใช้จ่าย
+        เพิ่มเติมที่เกิดจากการบำรุงรักษาหรือการจัดเก็บ
+      </p>
+      <p>
+        การเช่าเครื่องจักรยังช่วยลดภาระในการดูแลรักษาเมื่อเสร็จสิ้นการใช้งาน
+        คุณสามารถมุ่งเน้นไปที่การเพิ่มประสิทธิภาพในงานของคุณได้มากขึ้น
+        โดยไม่ต้องกังวลเกี่ยวกับการดูแลเครื่องจักรที่อาจเสียหายหรือเสื่อมสภาพ
+      </p>
+    </div>
+    <div class="footer-in">
+      <div class="fa-div">
+        <i class="fa-brands fa-facebook-f"></i>
+        <p>Kaset Connect</p>
+      </div>
+      <div class="e-div">
+        <i class="fa-solid fa-envelope"></i>
+        <p>kasetconnect@gmail.com</p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
