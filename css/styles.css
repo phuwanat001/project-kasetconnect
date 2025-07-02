@@ -788,3 +788,27 @@
      align-items: center;
 
  }
+
+ .notification {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.notification .fa-bell {
+  font-size: 20px;
+  color: #464646;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
