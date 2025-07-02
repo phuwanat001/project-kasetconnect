@@ -780,3 +780,11 @@
  .total-user:hover {
      cursor: pointer;
  }
+
+  .navbar-user {
+     background-color: rgb(255, 255, 255);
+     display: flex;
+     justify-content: start;
+     align-items: center;
+
+ }
