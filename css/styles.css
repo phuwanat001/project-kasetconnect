@@ -827,44 +827,52 @@
 
 .popup-box {
   background: #fff;
-  padding: 200px;
-  border-radius: 9px;
-  max-width: 400px;
-  max-height: 300px;
+  padding: 60px;
+  border-radius: 12px;
   width: 90%;
+  max-width: 650px;     
+  max-height: 90vh;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
 }
 
 .popup-content{
     overflow: auto;
-    max-height: 300px;
+    flex: 1;
+    max-height: 500px;
     margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
     text-align: left;
-    
 }
 
 .popup-box h2 {
-  margin-bottom: 10px;
-  color: #256e4d;
-  
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #256e4d;
 }
 
 .popup-box p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
 .popup-box button {
-  padding: 10px 50px;
+  padding: 12px;
+  width: 30%;
+  margin: auto;
   background-color: #459270;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+  text-align: center;
 }
 
 .popup-box button:hover {
