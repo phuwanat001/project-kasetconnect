@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>สมัครสมาชิก</title>
+
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <body>
     <div id="component-container"></div>
     <script>
@@ -22,47 +25,51 @@
     <p class="hname">สมัครสมาชิก</p>
     <div class="container-detail1">
       <div class="role-reg">
-        <div class="ro-reg">
-          <p>ผู้เช่า</p>
+        <div class="ro-reg p-5">
+          <p class="text-[rgba(116,181,4,1)]">ผู้เช่า</p>
+
           <p>ผู้ให้เช่า</p>
+          <div class="w-20 h-1 bg-[rgba(116,181,4,1)] px-10 absolute top-12 left-14 rounded-md"></div>
         </div>
+       
       </div>
+      
       <div class="container-input">
         <div class="in-l">
           <div class="input-reg">
-            <p>ชื่อผู้ใช้งาน</p>
-            <input type="text" placeholder="ชื่อผู้ใช้งาน" id="bar-srh" />
+            <p class="mb-4">ชื่อผู้ใช้งาน</p>
+            <input type="text" placeholder="ชื่อผู้ใช้งาน" id="bar-srh"  class="mb-3"/>
           </div>
           <div class="input-reg">
-            <p>ชื่อ-นามสกุล</p>
-            <input type="text" placeholder="ชื่อ-นามสกุล" id="bar-srh" />
+            <p class="mb-4">ชื่อ-นามสกุล</p>
+            <input type="text" placeholder="ชื่อ-นามสกุล" id="bar-srh" class="mb-3" />
           </div>
           <div class="input-reg">
-            <p>เบอร์โทรศัพท์</p>
-            <input type="tel" placeholder="เบอร์โทรศัพท์" id="bar-srh" />
+            <p class="mb-4">เบอร์โทรศัพท์</p>
+            <input type="tel" placeholder="เบอร์โทรศัพท์" id="bar-srh" class="mb-3" />
           </div>
           <div class="input-reg">
-            <p>อีเมล</p>
-            <input type="email" placeholder="อีเมล" id="bar-srh" />
+            <p class="mb-4">อีเมล</p>
+            <input type="email" placeholder="อีเมล" id="bar-srh" class="mb-3" />
           </div>
         </div>
 
         <div class="in-r">
           <div class="input-reg">
-            <p>รหัสผ่าน</p>
-            <input type="text" placeholder="รหัสผ่าน" id="bar-srh" />
+            <p class="mb-4">รหัสผ่าน</p>
+            <input type="text" placeholder="รหัสผ่าน" id="bar-srh" class="mb-3" />
           </div>
           <div class="input-reg">
-            <p>หมายเลขบัตรประชาชน</p>
-            <input type="text" placeholder="หมายเลขบัตรประชาชน" id="bar-srh" />
+            <p class="mb-4">หมายเลขบัตรประชาชน</p>
+            <input type="text" placeholder="หมายเลขบัตรประชาชน" id="bar-srh" class="mb-3" />
           </div>
           <div class="input-reg">
-            <p>อาชีพ</p>
-            <input type="text" placeholder="อาชีพ" id="bar-srh" />
+            <p class="mb-4">อาชีพ</p>
+            <input type="text" placeholder="อาชีพ" id="bar-srh" class="mb-3" />
           </div>
           <div class="input-reg">
-            <p>ที่อยู่</p>
-            <input type="text" placeholder="ที่อยู่" id="bar-srh" />
+            <p class="mb-4">ที่อยู่</p>
+            <input type="text" placeholder="ที่อยู่" id="bar-srh" class="mb-3" />
           </div>
         </div>
       </div>

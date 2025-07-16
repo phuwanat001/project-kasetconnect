@@ -678,6 +678,7 @@
      flex-direction: row;
      align-items: center;
      justify-content: space-between;
+     
 
      .auth {
          width: 5%;
@@ -739,8 +740,10 @@
  }
 
  .content-admin {
+
      display: flex;
      flex-direction: row;
+     
  }
 
  .content-db-admin {
@@ -748,24 +751,38 @@
      display: flex;
      flex-direction: column;
      width: 100%;
-     max-width: 700px;
-
+     /* background-color: var(--btnblue); */
      margin-left: 1.5rem;
-     padding: 0rem 15rem;
-     height: 100%;
+     padding-left: 1rem;
+     
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
  }
 
+
  .content-main {
      display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
+     flex-direction: column;
+     width: 100%;
+     max-width: 1000px;
+ }
+ #Hname{
+    font-size: 1.5rem;
+ }
 
+ .content-inn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+     
  }
 
  .total-user {
-     width: 30%;
+    
+    flex: 0 0 calc(50% - 10px); /* แสดง 2 กล่องต่อแถว */
+    padding: 20px; 
+    width: 100%;
+     max-width: 180px;
      position: relative;
      display: flex;
      flex-direction: row;
@@ -774,6 +791,21 @@
      margin: 10px;
      border-radius: 5px;
      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     height: 60px;
+
+
+     #tp-user{
+        position: absolute;
+        top: 0px;
+        left: 10px;
+     }
+     #un-user{
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 0px;
+        right: 10px;
+        
+     }
 
  }
 

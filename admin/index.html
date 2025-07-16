@@ -13,12 +13,35 @@
   <body>
     <div id="navbar-placeholder"></div>
     <p class="hname-ad">สวัสดี Admin : username</p>
-    
 
     <div class="content-admin">
       <div id="aside-admin"></div>
 
-      <div id="dashbroad-admin"></div>
+      <div class="content-db-admin">
+        <div class="content-main">
+          <p id="Hname">ภาพรวม</p>
+          <hr />
+          <div class="content-inn">
+            <div class="total-user">
+              <p id="tp-user">ยอดให้เช่า</p>
+              <p id="un-user">11 ครั้ง</p>
+            </div>
+            <div class="total-user">
+              <p id="tp-user">เครื่องจักรและอุปกรณ์</p>
+              <p id="un-user">11 ครั้ง</p>
+            </div>
+            <div class="total-user">
+              <p id="tp-user">จำนวนผู้เช่า</p>
+              <p id="un-user">11 ครั้ง</p>
+            </div>
+            <div class="total-user">
+              <p id="tp-user">จำนวนผู้ให้เช่า</p>
+              <p id="un-user">11 ครั้ง</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
     <script>
@@ -31,11 +54,6 @@
         .then((res) => res.text())
         .then((html) => {
           document.getElementById("aside-admin").innerHTML = html;
-        });
-      fetch("dashbroad-admin.html")
-        .then((res) => res.text())
-        .then((html) => {
-          document.getElementById("dashbroad-admin").innerHTML = html;
         });
     </script>
   </body>
