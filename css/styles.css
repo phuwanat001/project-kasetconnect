@@ -27,7 +27,6 @@
  .logo {
      font-size: 1.5rem;
      width: 200px;
-
  }
 
  .logo span {
@@ -812,3 +811,102 @@
  .total-user:hover {
      cursor: pointer;
  }
+
+
+ .navbar-user {
+     background-color: rgb(255, 255, 255);
+     display: flex;
+     justify-content: start;
+     align-items: center;
+
+ }
+
+.notification {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.notification .fa-bell {
+  font-size: 20px;
+  color: #464646;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 2, 2, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 60px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 650px;     
+  max-height: 90vh;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.popup-content{
+    overflow: auto;
+    flex: 1;
+    max-height: 500px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.popup-box h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #256e4d;
+}
+
+.popup-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.popup-box button {
+  padding: 12px;
+  width: 30%;
+  margin: auto;
+  background-color: #459270;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+}
+
+.popup-box button:hover {
+  background-color: #266448;
+}
